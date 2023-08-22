@@ -11,6 +11,7 @@ public abstract class AbstractButton : MonoBehaviour
 
     public LineRenderer a_lineRenderer;
 
+    private bool activeButton;
 
     private void Start()
     {
@@ -38,7 +39,7 @@ public abstract class AbstractButton : MonoBehaviour
                 a_lineRenderer.SetPosition(0, pos1);
                 a_lineRenderer.SetPosition(1, pos2);
 
-                if(Input.GetMouseButton(0))
+                if(Input.GetMouseButton(0) && activeButton)
                 {
                     updatePhysics();
                     Close();
@@ -53,10 +54,11 @@ public abstract class AbstractButton : MonoBehaviour
     }
     public virtual void editPhysics()
     {
+        activeButton= true;
         Debug.Log("MY POS2 is " + a_Object.transform.position);
     }
     public virtual void updatePhysics() 
     {
-        
+        activeButton= false;
     }
 }
