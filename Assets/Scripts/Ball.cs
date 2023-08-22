@@ -25,6 +25,7 @@ public class Ball : MonoBehaviour
         LineRendererSetUp();
         _circleRadius = 0.3f;
         _leftCatapultToProjectile = new Ray(lineFront.transform.position, Vector3.zero);
+
     }
 
     
@@ -93,4 +94,6 @@ public class Ball : MonoBehaviour
             nextBall.SetActive(true);
         }
     }
+
+    
 }
