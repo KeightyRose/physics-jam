@@ -19,10 +19,6 @@ public class HoverInteractable : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void FixedUpdate()
-    {
-        
-    }
     private void OnMouseEnter()
     {
         _hoverObject.SetActive(true);
