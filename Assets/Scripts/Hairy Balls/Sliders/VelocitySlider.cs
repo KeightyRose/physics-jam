@@ -10,6 +10,11 @@ public class VelocitySlider : MonoBehaviour
     void Start()
     {
         velocitySlider = GetComponent<Slider>();
+
+        velocitySlider.maxValue = 15;
+        velocitySlider.minValue = 1;
+
+        velocitySlider.value = 5;
     }
 
     void Update()

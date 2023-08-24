@@ -10,7 +10,11 @@ public class ForceSlider : MonoBehaviour
 
     void Start()
     {
+        forceSlider.maxValue = 10;
+        forceSlider.minValue = 1;
+
         forceSlider = GetComponent<Slider>();
+        forceSlider.value = 10;
     }
 
     

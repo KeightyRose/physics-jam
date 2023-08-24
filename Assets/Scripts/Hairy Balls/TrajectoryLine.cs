@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class TrajectoryLine : MonoBehaviour
@@ -49,6 +50,8 @@ public class TrajectoryLine : MonoBehaviour
     {
         isDrawing = false;
         //lineRenderer.enabled = false;
+
+        Debug.Log("this is start: " + startPoint + " and this is end " + endPoint);
     }
 
     private void UpdateTrajectoryLine()
@@ -56,7 +59,9 @@ public class TrajectoryLine : MonoBehaviour
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z = 0f;
 
-        Debug.Log(mousePosition);
+        //Debug.Log(mousePosition);
+
+        endPoint = mousePosition;
 
         lineRenderer.SetPosition(0, startPoint);
         lineRenderer.SetPosition(1, mousePosition);
