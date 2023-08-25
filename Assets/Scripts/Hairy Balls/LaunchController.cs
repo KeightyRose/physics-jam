@@ -5,7 +5,7 @@ using UnityEngine;
 public class LaunchController : MonoBehaviour
 {
     public TrajectoryLine trajectoryLine;
-    private BigHairyBalls bigHairyBalls;
+    //private BigHairyBalls bigHairyBalls;
 
     public Rigidbody2D projectilePrefab;
     public Transform spawnPoint;
@@ -27,12 +27,6 @@ public class LaunchController : MonoBehaviour
     {
         LaunchProjectile(trajectoryLine.endPoint - trajectoryLine.startPoint);
 
-        
-    }
-
-    public void OnGravitySliderChanged()
-    {
-        Physics2D.gravity = new Vector3(0, -gravitySlider.gravitySlider.value);
     }
 
     private void LaunchProjectile(Vector2 direction)
@@ -41,6 +35,7 @@ public class LaunchController : MonoBehaviour
 
         float force = forceSlider.forceSlider.value;
         float mass = massSlider.massSlider.value;
+        float gravityScale = gravitySlider.gravitySlider.value;
         float velocity = 1;
 
         direction = direction.normalized;
@@ -48,9 +43,8 @@ public class LaunchController : MonoBehaviour
         Debug.Log(direction);
 
         currentProjectile.mass = mass;
+        currentProjectile.gravityScale = gravityScale;
         currentProjectile.AddForce(direction * force, ForceMode2D.Impulse);
-
-        //projectile.AddForce(direction, ForceMode.Impulse);
     }
 
 }

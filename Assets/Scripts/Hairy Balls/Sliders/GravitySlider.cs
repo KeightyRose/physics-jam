@@ -11,11 +11,22 @@ public class GravitySlider : MonoBehaviour
     void Start()
     {
         gravitySlider = GetComponent<Slider>();
+
+        gravitySlider.minValue = -1.5f;
+        gravitySlider.maxValue = 1.5f;
+
+        gravitySlider.value = .5f;
     }
+
 
     
     void Update()
     {
         
     }
+
+    /*public void OnGravitySliderChanged()
+    {
+        Physics2D.gravity = new Vector3(0, -gravitySlider.value);
+    }*/
 }
