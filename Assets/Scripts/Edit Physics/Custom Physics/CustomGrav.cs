@@ -18,8 +18,9 @@ public class CustomGrav : MonoBehaviour
         rb2d.AddForce(gravityForce * rb2d.mass);
     }
 
-    private void changeGravity(Vector2 gravIn)
+    public void changeGravity(Vector2 gravIn)
     {
        gravityForce = gravIn;
+
     }
 }

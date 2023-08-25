@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EditGravity : AbstractButton
 {
+    private CustomGrav gravScript;
     public override void editPhysics()
     {
         base.editPhysics();
@@ -11,7 +12,10 @@ public class EditGravity : AbstractButton
     }
     public override void updatePhysics()
     {
+        gravScript = a_Object.GetComponent<CustomGrav>();
         base.updatePhysics();
-        a_Rb.gravityScale = 1;
+        Vector3 pos1 = a_Object.transform.position;
+        Vector3 pos2 = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        gravScript.changeGravity(pos2 - pos1);
     }
 }

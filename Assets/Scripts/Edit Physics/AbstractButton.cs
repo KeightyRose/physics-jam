@@ -44,6 +44,7 @@ public abstract class AbstractButton : MonoBehaviour
                     updatePhysics();
                     Close();
                     a_EditPhysics.switchOffButtons();
+                    a_EditPhysics.switchOnLayerMask();
                 }
             }
         }
@@ -54,7 +55,7 @@ public abstract class AbstractButton : MonoBehaviour
     }
     public virtual void editPhysics()
     {
-        activeButton= true;
+        activeButton = true;
         Debug.Log("MY POS2 is " + a_Object.transform.position);
     }
     public virtual void updatePhysics() 
