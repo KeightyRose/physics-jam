@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class EditPhysics : MonoBehaviour
 {
+    [SerializeField] private int notClickableLayer, clickableLayer;
     private Rigidbody2D rb;
     [SerializeField] private GameObject[] options;
     [SerializeField] private float radius;
@@ -19,10 +20,6 @@ public class EditPhysics : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void switchOffButtons()
     {
         foreach (GameObject option in options)
@@ -32,10 +29,12 @@ public class EditPhysics : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        this.gameObject.layer = notClickableLayer;
         // show the options
         // get mouse position and display each option around the mouse
-        if (options[0] != null)
+        if (options[0] != null && options.Length != 0)
         {
+            
             //interval is angle between options
             float interval = 360 / options.Length;
             interval = interval * Mathf.PI / 180;
@@ -56,9 +55,14 @@ public class EditPhysics : MonoBehaviour
                 if (option.TryGetComponent(out AbstractButton btnScript))
                 {
                     Debug.Log("MY POS1 is " + transform.position);
-                   btnScript.SetObject(this.gameObject);
+                    btnScript.SetObject(this.gameObject);
+                    
                 }
             }
         }
+    }
+    public void switchOnLayerMask()
+    {
+        gameObject.layer = clickableLayer;
     }
 }
