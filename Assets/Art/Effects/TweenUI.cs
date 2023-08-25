@@ -11,6 +11,7 @@ public class TweenUI : MonoBehaviour
     void Start()
     {
         originalScale= transform.localScale;
+        Debug.Log(originalScale);
         transform.localScale = Vector3.zero;
         LeanTween.scale(this.gameObject, originalScale,1f).setEase(LeanTweenType.easeOutBounce);
         if(spin)
@@ -30,7 +31,6 @@ public class TweenUI : MonoBehaviour
     {
         if (!first)
         {
-            originalScale = transform.localScale;
             transform.localScale = Vector3.zero;
             LeanTween.scale(this.gameObject, originalScale, 1f).setEase(LeanTweenType.easeOutBounce);
             if (spin)

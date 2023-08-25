@@ -10,12 +10,16 @@ public class Tutorial : MonoBehaviour
     GameObject clickObj;
     //each prompt must move the session forward. 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         foreach(GameObject prompt in prompts)
         {
             prompt.SetActive(false);
         }
+        
+    }
+    private void Start()
+    {
         nextPrompt();
     }
 
@@ -26,6 +30,7 @@ public class Tutorial : MonoBehaviour
     }
     private void nextPrompt()
     {
+        Debug.Log("Recieved Event");
         currentPromptIndex++;
         if(currentPrompt !=null)
         {
@@ -39,10 +44,10 @@ public class Tutorial : MonoBehaviour
     }
     private void OnEnable()
     {
-        OnMousePrompt.OnPrompt += nextPrompt;
+        PromptsAbs.OnPrompt += nextPrompt;
     }
     private void OnDisable()
     {
-        OnMousePrompt.OnPrompt -= nextPrompt;
+        PromptsAbs.OnPrompt -= nextPrompt;
     }
 }
