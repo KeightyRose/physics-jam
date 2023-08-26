@@ -8,18 +8,22 @@ public class BigHairyBalls : MonoBehaviour
     /*public Rigidbody2D rb;
 
     private ForceSlider forceSlider;
-    private GravitySlider gravitySlider;
+    
     private MassSlider massSlider;
     private VelocitySlider velocitySlider;
 
     public GameObject spawnPoint;*/
 
+    private GravitySlider gravitySlider;
+
     private void Awake()
     {
+        gravitySlider = FindObjectOfType<GravitySlider>();
+
         //spawnPoint = GameObject.Find("Spawn");
 
         /*forceSlider = FindObjectOfType<ForceSlider>();
-        gravitySlider = FindObjectOfType<GravitySlider>();
+        
         massSlider = FindObjectOfType<MassSlider>();
         velocitySlider = FindObjectOfType<VelocitySlider>();*/
     }
@@ -32,7 +36,7 @@ public class BigHairyBalls : MonoBehaviour
 
     void Update()
     {
-        
+        //OnGravitySliderChanged();
     }
 
     public void Launch()

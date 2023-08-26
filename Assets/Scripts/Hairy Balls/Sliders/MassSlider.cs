@@ -10,7 +10,10 @@ public class MassSlider : MonoBehaviour
     void Start()
     {
         massSlider = GetComponent<Slider>();
-        massSlider.value = 1f;
+        massSlider.value = 1.3f;
+
+        massSlider.minValue = 0.3f;
+        massSlider.maxValue = 2;
     }
 
     
