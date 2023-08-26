@@ -10,6 +10,7 @@ public class CustomGrav : MonoBehaviour
     void Start()
     {
         rb2d= GetComponent<Rigidbody2D>();
+        rb2d.gravityScale= 0f;
     }
 
     // Update is called once per frame

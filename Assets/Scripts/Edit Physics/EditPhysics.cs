@@ -9,7 +9,9 @@ public class EditPhysics : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField] private GameObject[] options;
     [SerializeField] private float radius;
+
     private LineRenderer lineRenderer;
+
     // Start is called before the first frame update
     // so when the player selects an object, options appear. When you select an option that creates an arrow that they can drag
     void Start()
@@ -27,7 +29,7 @@ public class EditPhysics : MonoBehaviour
             option.SetActive(false);
         }
     }
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         this.gameObject.layer = notClickableLayer;
         // show the options
