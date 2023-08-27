@@ -1941,6 +1941,7 @@ MonoBehaviour:
   - {fileID: 1776643763}
   - {fileID: 1789656172}
   - {fileID: 415832009}
+  - {fileID: 2105054992}
 --- !u!4 &539126586
 Transform:
   m_ObjectHideFlags: 0
@@ -7446,6 +7447,7 @@ Transform:
   - {fileID: 128223648}
   - {fileID: 1378164587}
   - {fileID: 855690478}
+  - {fileID: 2105054991}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2063061885
@@ -7910,6 +7912,136 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &2105054990
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2063061884}
+    m_Modifications:
+    - target: {fileID: 1537808904414405058, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      propertyPath: m_text
+      value: Bet u cant kill me with that piano scrub
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537808904414405058, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      propertyPath: m_fontSize
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537808904414405058, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304856445570832710, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2868611
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304856445570832710, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2868611
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304856445570832710, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2868611
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304856445570832710, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304856445570832710, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304856445570832710, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.437
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304856445570832710, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304856445570832710, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304856445570832710, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304856445570832710, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304856445570832710, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304856445570832710, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304856445570832710, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250178090127566716, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      propertyPath: m_Name
+      value: N2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250178090127566716, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8250178090127566716, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2105054994}
+    - targetCorrespondingSourceObject: {fileID: 8250178090127566716, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2105054993}
+    - targetCorrespondingSourceObject: {fileID: 1388826375449751549, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+--- !u!4 &2105054991 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6304856445570832710, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+  m_PrefabInstance: {fileID: 2105054990}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2105054992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8250178090127566716, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
+  m_PrefabInstance: {fileID: 2105054990}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2105054993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105054992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488bb1d3cb4dee44b9b6a9c15d27d683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 6
+--- !u!114 &2105054994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105054992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 875c4607ca49608439f8413e8e95a90c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spin: 0
 --- !u!1001 &2139794925
 PrefabInstance:
   m_ObjectHideFlags: 0
