@@ -55,6 +55,8 @@ public class RagDollController : MonoBehaviour
         foreach (Rigidbody2D rb in ragDollRigidBodies)
         {
             rb.isKinematic = false;
+            rb.gravityScale = 0;
+            rb.angularDrag= 0;
         }
 
         mainCollider.enabled = false;

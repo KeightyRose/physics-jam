@@ -508,13 +508,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b3e808b95021f44ea4b30af0a7a7d3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 189122997}
-  hook: {fileID: 0}
-  releaseTime: 0.15
-  maxDragDist: 2
-  nextBall: {fileID: 0}
-  lineFront: {fileID: 1118372149}
-  lineBack: {fileID: 292495089}
 --- !u!231 &189122996
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -6196,9 +6189,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 942483980}
     m_Modifications:
+    - target: {fileID: 356858589808330816, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 465365026736727313, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: -0.6199951
+      objectReference: {fileID: 0}
+    - target: {fileID: 1570018127496338669, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787620435649734226, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929131892562043344, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2262569646102156326, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2407809446727952172, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
       propertyPath: audSource
@@ -6227,6 +6240,10 @@ PrefabInstance:
     - target: {fileID: 5771413064615137640, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: -0.112000465
+      objectReference: {fileID: 0}
+    - target: {fileID: 6826797741762386989, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7067681957792288867, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -6288,6 +6305,10 @@ PrefabInstance:
       propertyPath: options.Array.data[1]
       value: 
       objectReference: {fileID: 782503743}
+    - target: {fileID: 8548119598257245480, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -6330,13 +6351,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b3e808b95021f44ea4b30af0a7a7d3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 2025072053}
-  hook: {fileID: 0}
-  releaseTime: 0.15
-  maxDragDist: 2
-  nextBall: {fileID: 189122994}
-  lineFront: {fileID: 1118372149}
-  lineBack: {fileID: 292495089}
 --- !u!231 &2025072052
 SpringJoint2D:
   m_ObjectHideFlags: 0
