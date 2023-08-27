@@ -39,7 +39,7 @@ public class TrajectoryLine : MonoBehaviour
             UpdateTrajectoryLine();
         }
 
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButton(0))
         {
             LockTrajectory();
         }
