@@ -6,6 +6,7 @@ TagManager:
   tags:
   - KnockDown
   - Ball
+  - Neighbor
   layers:
   - Default
   - TransparentFX

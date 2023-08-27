@@ -2,46 +2,45 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Neighbor : MonoBehaviour
 {
-    public Slider neighborHealthBar;
+    public float neighborHealth = 3;
 
-    //private CircleCollider2D headCollider;
+    public Slider neighborHealthSlider;
+
+    [SerializeField] private float delay = 2f;
 
     void Start()
     {
-        neighborHealthBar.maxValue = 3;
-        neighborHealthBar.minValue = 0;
-        neighborHealthBar.value = 3;
+        neighborHealthSlider.minValue = 0;
+        neighborHealthSlider.maxValue = 3;
+        neighborHealthSlider.value = neighborHealth;
     }
 
     
     void Update()
     {
-        Collider2D[] childColliders = GetComponentsInChildren<Collider2D>();
-
-        foreach (Collider2D childCollider in childColliders)
+        if (neighborHealth <= 0)
         {
-            if (childCollider != null && childCollider != GetComponent<Collider2D>())
-            {
-                Debug.Log("This child has a collider: " + childCollider.name);
-            }
+            Debug.Log("won level");
+
+            StartCoroutine(nextScene());
         }
     }
 
-    /*private void OnCollisionEnter2D(Collision2D collision)
+    private IEnumerator nextScene()
     {
-
-        if (collision.gameObject.CompareTag("Ball"))
+        yield return new WaitForSeconds(delay);
+        if (SceneManager.GetActiveScene().buildIndex + 1 < SceneManager.sceneCount)
         {
-            Debug.Log("Hit head");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        else
+        {
+            SceneManager.LoadScene(0);
         }
     }
-
-    Children scripts calls from the parent the drecrease health 
-    transform.parent returns parent game object 
-    transform.parent.gameobject.getcomponent<health>
-        */
 
 }
