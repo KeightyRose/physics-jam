@@ -300,10 +300,12 @@ GameObject:
   m_Component:
   - component: {fileID: 52118600}
   - component: {fileID: 52118604}
+  - component: {fileID: 52118607}
   - component: {fileID: 52118603}
   - component: {fileID: 52118602}
   - component: {fileID: 52118601}
   - component: {fileID: 52118605}
+  - component: {fileID: 52118606}
   m_Layer: 0
   m_Name: Stick Man_Hand R
   m_TagString: Player
@@ -489,6 +491,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1119281106}
   bloodEffect: {fileID: 1387935338}
+--- !u!114 &52118606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52118599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8b6948332e1654297f79c5558d6f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 731160733}
+--- !u!114 &52118607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52118599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f5e73ccdfdba54d8662b770e4f9cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &128223644
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,10 +1178,12 @@ GameObject:
   m_Component:
   - component: {fileID: 269849053}
   - component: {fileID: 269849057}
+  - component: {fileID: 269849060}
   - component: {fileID: 269849056}
   - component: {fileID: 269849055}
   - component: {fileID: 269849054}
   - component: {fileID: 269849058}
+  - component: {fileID: 269849059}
   m_Layer: 0
   m_Name: Stick Man_Hand L
   m_TagString: Player
@@ -1340,6 +1369,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1119281106}
   bloodEffect: {fileID: 1387935338}
+--- !u!114 &269849059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269849052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8b6948332e1654297f79c5558d6f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 731160733}
+--- !u!114 &269849060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269849052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f5e73ccdfdba54d8662b770e4f9cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &291496427
 GameObject:
   m_ObjectHideFlags: 0
@@ -1994,6 +2048,7 @@ GameObject:
   - component: {fileID: 447160379}
   - component: {fileID: 447160380}
   - component: {fileID: 447160381}
+  - component: {fileID: 447160382}
   m_Layer: 0
   m_Name: Stick Man_Body
   m_TagString: Player
@@ -2296,6 +2351,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1119281106}
   bloodEffect: {fileID: 1387935338}
+--- !u!114 &447160382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447160373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8b6948332e1654297f79c5558d6f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 731160733}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2544,10 +2612,12 @@ GameObject:
   m_Component:
   - component: {fileID: 547252894}
   - component: {fileID: 547252893}
+  - component: {fileID: 547252897}
   - component: {fileID: 547252892}
   - component: {fileID: 547252890}
   - component: {fileID: 547252891}
   - component: {fileID: 547252895}
+  - component: {fileID: 547252896}
   m_Layer: 0
   m_Name: Stick Man_Arm R
   m_TagString: Player
@@ -2733,6 +2803,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1119281106}
   bloodEffect: {fileID: 1387935338}
+--- !u!114 &547252896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547252889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8b6948332e1654297f79c5558d6f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 731160733}
+--- !u!114 &547252897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547252889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f5e73ccdfdba54d8662b770e4f9cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &575423969
 GameObject:
   m_ObjectHideFlags: 0
@@ -3368,10 +3463,12 @@ GameObject:
   m_Component:
   - component: {fileID: 630531146}
   - component: {fileID: 630531145}
+  - component: {fileID: 630531149}
   - component: {fileID: 630531144}
   - component: {fileID: 630531142}
   - component: {fileID: 630531143}
   - component: {fileID: 630531147}
+  - component: {fileID: 630531148}
   m_Layer: 0
   m_Name: Stick Man_Arm L
   m_TagString: Player
@@ -3557,10 +3654,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1119281106}
   bloodEffect: {fileID: 1387935338}
+--- !u!114 &630531148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630531141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8b6948332e1654297f79c5558d6f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 731160733}
+--- !u!114 &630531149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630531141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f5e73ccdfdba54d8662b770e4f9cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &676991475 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1663867811691023684, guid: 542d33d03df05404faba2faf786edea1, type: 3}
   m_PrefabInstance: {fileID: 7062291336400316319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &731160733 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6250096854426760552, guid: 1b70efaffe5619f4dbde7f265c4fba69, type: 3}
+  m_PrefabInstance: {fileID: 4175100864553278142}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &866698674
 PrefabInstance:
@@ -3761,10 +3888,12 @@ GameObject:
   m_Component:
   - component: {fileID: 894176357}
   - component: {fileID: 894176361}
+  - component: {fileID: 894176364}
   - component: {fileID: 894176360}
   - component: {fileID: 894176359}
   - component: {fileID: 894176358}
   - component: {fileID: 894176362}
+  - component: {fileID: 894176363}
   m_Layer: 0
   m_Name: Stick Man_Foot R
   m_TagString: Player
@@ -3950,6 +4079,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1119281106}
   bloodEffect: {fileID: 1387935338}
+--- !u!114 &894176363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894176356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8b6948332e1654297f79c5558d6f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 731160733}
+--- !u!114 &894176364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894176356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f5e73ccdfdba54d8662b770e4f9cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &933875055 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3143942702942491372, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
@@ -4311,10 +4465,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1004653214}
   - component: {fileID: 1004653213}
+  - component: {fileID: 1004653217}
   - component: {fileID: 1004653212}
   - component: {fileID: 1004653210}
   - component: {fileID: 1004653211}
   - component: {fileID: 1004653215}
+  - component: {fileID: 1004653216}
   m_Layer: 0
   m_Name: Stick Man_Leg L
   m_TagString: Player
@@ -4500,6 +4656,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1119281106}
   bloodEffect: {fileID: 1387935338}
+--- !u!114 &1004653216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004653209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8b6948332e1654297f79c5558d6f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 731160733}
+--- !u!114 &1004653217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004653209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f5e73ccdfdba54d8662b770e4f9cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1028050233
 GameObject:
   m_ObjectHideFlags: 0
@@ -5135,6 +5316,7 @@ GameObject:
   - component: {fileID: 1119281101}
   - component: {fileID: 1119281105}
   - component: {fileID: 1119281106}
+  - component: {fileID: 1119281107}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5278,6 +5460,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: 3
   playerHealthSlider: {fileID: 1309510537}
+--- !u!114 &1119281107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119281100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8b6948332e1654297f79c5558d6f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 731160733}
 --- !u!1 &1124924952
 GameObject:
   m_ObjectHideFlags: 0
@@ -5571,10 +5766,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1356661742}
   - component: {fileID: 1356661741}
+  - component: {fileID: 1356661745}
   - component: {fileID: 1356661740}
   - component: {fileID: 1356661738}
   - component: {fileID: 1356661739}
   - component: {fileID: 1356661743}
+  - component: {fileID: 1356661744}
   m_Layer: 0
   m_Name: Stick Man_Leg R
   m_TagString: Player
@@ -5760,6 +5957,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1119281106}
   bloodEffect: {fileID: 1387935338}
+--- !u!114 &1356661744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356661737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8b6948332e1654297f79c5558d6f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 731160733}
+--- !u!114 &1356661745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356661737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f5e73ccdfdba54d8662b770e4f9cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1378164586 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8250178090127566716, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
@@ -6229,7 +6451,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1537808904414405058, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
       propertyPath: m_text
-      value: Go schrodingers cat, tear them apart !
+      value: Go Schrodingers Cat, tear them apart !
       objectReference: {fileID: 0}
     - target: {fileID: 1537808904414405058, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
       propertyPath: m_fontSize
@@ -11519,10 +11741,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1847317523}
   - component: {fileID: 1847317527}
+  - component: {fileID: 1847317530}
   - component: {fileID: 1847317526}
   - component: {fileID: 1847317525}
   - component: {fileID: 1847317524}
   - component: {fileID: 1847317528}
+  - component: {fileID: 1847317529}
   m_Layer: 0
   m_Name: Stick Man_Foot L
   m_TagString: Player
@@ -11708,6 +11932,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1119281106}
   bloodEffect: {fileID: 1387935338}
+--- !u!114 &1847317529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847317522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8b6948332e1654297f79c5558d6f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 731160733}
+--- !u!114 &1847317530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847317522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f5e73ccdfdba54d8662b770e4f9cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1883891863
 GameObject:
   m_ObjectHideFlags: 0
@@ -12559,10 +12808,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2088068557}
   - component: {fileID: 2088068561}
+  - component: {fileID: 2088068564}
   - component: {fileID: 2088068560}
   - component: {fileID: 2088068559}
   - component: {fileID: 2088068558}
   - component: {fileID: 2088068562}
+  - component: {fileID: 2088068563}
   m_Layer: 0
   m_Name: Stick Man_Head
   m_TagString: Player
@@ -12738,6 +12989,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1119281106}
   bloodEffect: {fileID: 1387935338}
+--- !u!114 &2088068563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088068556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8b6948332e1654297f79c5558d6f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 731160733}
+--- !u!114 &2088068564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088068556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f5e73ccdfdba54d8662b770e4f9cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2139794925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12951,6 +13227,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b70efaffe5619f4dbde7f265c4fba69, type: 3}
+--- !u!1001 &4300347521028217301
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2682986811297590445, guid: 4c2e54b934a01884f967f444a66e77aa, type: 3}
+      propertyPath: m_Name
+      value: MusicManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7255389459612696567, guid: 4c2e54b934a01884f967f444a66e77aa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.6557703
+      objectReference: {fileID: 0}
+    - target: {fileID: 7255389459612696567, guid: 4c2e54b934a01884f967f444a66e77aa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.2582431
+      objectReference: {fileID: 0}
+    - target: {fileID: 7255389459612696567, guid: 4c2e54b934a01884f967f444a66e77aa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.10240024
+      objectReference: {fileID: 0}
+    - target: {fileID: 7255389459612696567, guid: 4c2e54b934a01884f967f444a66e77aa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7255389459612696567, guid: 4c2e54b934a01884f967f444a66e77aa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7255389459612696567, guid: 4c2e54b934a01884f967f444a66e77aa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7255389459612696567, guid: 4c2e54b934a01884f967f444a66e77aa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7255389459612696567, guid: 4c2e54b934a01884f967f444a66e77aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7255389459612696567, guid: 4c2e54b934a01884f967f444a66e77aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7255389459612696567, guid: 4c2e54b934a01884f967f444a66e77aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4c2e54b934a01884f967f444a66e77aa, type: 3}
 --- !u!1001 &7062291336400316319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13112,3 +13445,4 @@ SceneRoots:
   - {fileID: 539126586}
   - {fileID: 1794741310}
   - {fileID: 4778862}
+  - {fileID: 4300347521028217301}
