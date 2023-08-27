@@ -256,7 +256,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Name
+  m_text: Goodbye Neighbhour
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0988dfedd18aba046867bed38fb92a71, type: 2}
   m_sharedMaterial: {fileID: 8203420856357068428, guid: 0988dfedd18aba046867bed38fb92a71, type: 2}
