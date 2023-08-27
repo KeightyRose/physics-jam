@@ -26,5 +26,12 @@ public class PlayerChildren : MonoBehaviour
             _particlePrefab.transform.position = this.gameObject.transform.position;
             _particlePrefab.SetActive(true);
         }
+        if (collision.gameObject.CompareTag("KnockDown"))
+        {
+            player.playerHealth -= 1;
+            player.playerHealthSlider.value = player.playerHealth;
+            _particlePrefab.transform.position = this.gameObject.transform.position;
+            _particlePrefab.SetActive(true);
+        }
     }
 }

@@ -13,25 +13,26 @@ public class CatWalk : MonoBehaviour
     {
         transform.Translate(transform.right*Time.deltaTime*speed);
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.transform.name == "Player")
-        {
-            GameObject temp = Instantiate(particle,collision.transform.position,Quaternion.identity);
-            collision.gameObject.GetComponent<RagDollController>().RagDollModeOn();
-            Rigidbody2D[] bodies = collision.transform.GetComponentsInChildren<Rigidbody2D>();
-            foreach(Rigidbody2D b in bodies)
-            {
-                b.gravityScale = 1;
-            }
-             StartCoroutine(catKill());
-        }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if(collision.transform.tag == "Player")
+    //    {
+    //        GameObject temp = Instantiate(particle,collision.transform.position,Quaternion.identity);
+    //        collision.gameObject.GetComponent<RagDollController>().RagDollModeOn();
+    //        Rigidbody2D[] bodies = collision.transform.GetComponentsInChildren<Rigidbody2D>();
+    //        foreach(Rigidbody2D b in bodies)
+    //        {
+    //            b.gravityScale = 3;
+    //        }
 
-    }
+    //         StartCoroutine(catKill());
+    //    }
 
-    private IEnumerator catKill()
-    {
-        yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+    //}
+
+    //private IEnumerator catKill()
+    //{
+    //    yield return new WaitForSeconds(2);
+    //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    //}
 }

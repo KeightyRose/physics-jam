@@ -27,7 +27,7 @@ public class RagDollController : MonoBehaviour
     // Update is called once per frame
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "KnockDown")
+        if(collision.gameObject.tag == "KnockDown" || collision.gameObject.tag == "Player")
         {
             RagDollModeOn();
             if (particleEffect != null)
