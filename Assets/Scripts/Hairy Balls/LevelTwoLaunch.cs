@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaunchController : MonoBehaviour
+public class LevelTwoLaunch : MonoBehaviour
 {
     public TrajectoryLine trajectoryLine;
     //private BigHairyBalls bigHairyBalls;
@@ -10,9 +10,11 @@ public class LaunchController : MonoBehaviour
     public Rigidbody2D projectilePrefab;
     public Transform spawnPoint;
 
-    private ForceSlider forceSlider;
-    private GravitySlider gravitySlider;
-    private MassSlider massSlider;
+    [SerializeField] private ForceSlider forceSlider;
+    [SerializeField] private GravitySlider gravitySlider;
+    [SerializeField] private MassSlider massSlider;
+    [SerializeField] private BouncySlider bouncySlider;
+ 
     //private VelocitySlider velocitySlider;
 
     private void Start()
@@ -20,6 +22,7 @@ public class LaunchController : MonoBehaviour
         forceSlider = FindObjectOfType<ForceSlider>();
         gravitySlider = FindObjectOfType<GravitySlider>();
         massSlider = FindObjectOfType<MassSlider>();
+        bouncySlider = FindObjectOfType<BouncySlider>();
         //velocitySlider = FindObjectOfType<VelocitySlider>();
     }
 
@@ -44,6 +47,10 @@ public class LaunchController : MonoBehaviour
 
         currentProjectile.mass = mass;
         currentProjectile.gravityScale = gravityScale;
+
+        currentProjectile.GetComponent<Rigidbody2D>().sharedMaterial.bounciness = bouncySlider.bouncinessMat.bounciness;
+
+
         currentProjectile.AddForce(direction * force, ForceMode2D.Impulse);
     }
 
