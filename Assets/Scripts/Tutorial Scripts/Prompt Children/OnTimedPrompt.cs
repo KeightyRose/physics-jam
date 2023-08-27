@@ -16,6 +16,5 @@ public class OnTimedPrompt : PromptsAbs
     {
         yield return new WaitForSeconds(time);
         promptEventFunction();
-        Debug.Log("Finished coroutine");
     }
 }

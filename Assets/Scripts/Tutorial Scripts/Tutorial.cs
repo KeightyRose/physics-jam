@@ -30,7 +30,7 @@ public class Tutorial : MonoBehaviour
     }
     private void nextPrompt()
     {
-        Debug.Log("Recieved Event");
+        
         currentPromptIndex++;
         if(currentPrompt !=null)
         {

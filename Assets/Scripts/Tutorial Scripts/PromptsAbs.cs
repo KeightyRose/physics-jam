@@ -13,7 +13,7 @@ public abstract class PromptsAbs : MonoBehaviour
 
     public void promptEventFunction()
     {
-        Debug.Log("PUBLISHED PROMPT");
+       
         if (OnPrompt != null)
         {
             
