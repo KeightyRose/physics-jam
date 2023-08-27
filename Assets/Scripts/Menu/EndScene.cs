@@ -45,7 +45,7 @@ public class EndScene : MonoBehaviour
         }
     }
 
-    private IEnumerator nextScene()
+    public IEnumerator nextScene()
     {
         yield return new WaitForSeconds(delay);
         if(SceneManager.GetActiveScene().buildIndex +  1 < SceneManager.sceneCount)
