@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4267304269490000872}
-  bloodEffect: {fileID: 0}
+  bloodEffect: {fileID: 3349583326600179042, guid: 7acdcc609f5b29f41a1c788adbbc4343, type: 3}
 --- !u!1 &211481909313409451
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4267304269490000872}
-  bloodEffect: {fileID: 0}
+  bloodEffect: {fileID: 3349583326600179042, guid: 7acdcc609f5b29f41a1c788adbbc4343, type: 3}
 --- !u!1 &326108864959063815
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,7 +596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4267304269490000872}
-  bloodEffect: {fileID: 0}
+  bloodEffect: {fileID: 3349583326600179042, guid: 7acdcc609f5b29f41a1c788adbbc4343, type: 3}
 --- !u!1 &1301738506697034288
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,7 +769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4267304269490000872}
-  bloodEffect: {fileID: 0}
+  bloodEffect: {fileID: 3349583326600179042, guid: 7acdcc609f5b29f41a1c788adbbc4343, type: 3}
 --- !u!1 &1693437004728984977
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,7 +968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4267304269490000872}
-  bloodEffect: {fileID: 0}
+  bloodEffect: {fileID: 3349583326600179042, guid: 7acdcc609f5b29f41a1c788adbbc4343, type: 3}
 --- !u!1 &1858433871695707841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,7 +1046,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.029532194, y: -0.22149134}
+  m_Offset: {x: 0.029532194, y: -0.11980063}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1057,7 +1057,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2362571, y: 2.6242695}
+  m_Size: {x: 1.2362571, y: 2.0511036}
   m_EdgeRadius: 0
 --- !u!114 &5303514706480698203
 MonoBehaviour:
@@ -1301,7 +1301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4267304269490000872}
-  bloodEffect: {fileID: 0}
+  bloodEffect: {fileID: 3349583326600179042, guid: 7acdcc609f5b29f41a1c788adbbc4343, type: 3}
 --- !u!1 &3416267919437600483
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,7 +1500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4267304269490000872}
-  bloodEffect: {fileID: 0}
+  bloodEffect: {fileID: 3349583326600179042, guid: 7acdcc609f5b29f41a1c788adbbc4343, type: 3}
 --- !u!1 &3875155177477988756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1699,7 +1699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4267304269490000872}
-  bloodEffect: {fileID: 0}
+  bloodEffect: {fileID: 3349583326600179042, guid: 7acdcc609f5b29f41a1c788adbbc4343, type: 3}
 --- !u!1 &6178585874630259464
 GameObject:
   m_ObjectHideFlags: 0
@@ -1898,7 +1898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4267304269490000872}
-  bloodEffect: {fileID: 0}
+  bloodEffect: {fileID: 3349583326600179042, guid: 7acdcc609f5b29f41a1c788adbbc4343, type: 3}
 --- !u!1 &7695767134760974092
 GameObject:
   m_ObjectHideFlags: 0
@@ -2097,4 +2097,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4267304269490000872}
-  bloodEffect: {fileID: 0}
+  bloodEffect: {fileID: 3349583326600179042, guid: 7acdcc609f5b29f41a1c788adbbc4343, type: 3}
