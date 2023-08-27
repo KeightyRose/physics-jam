@@ -21,12 +21,13 @@ public class NeighborChildren : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ball"))
+        if (collision.gameObject.CompareTag("Ball") || collision.gameObject.CompareTag("KnockDown") || collision.gameObject.CompareTag("Player"))
         {
             neighbor.neighborHealth -= 1;
             neighbor.neighborHealthSlider.value = neighbor.neighborHealth;
             _particlePrefab.transform.position = this.gameObject.transform.position;
             _particlePrefab.SetActive(true);
         }
+     
     }
 }

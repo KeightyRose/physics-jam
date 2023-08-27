@@ -233,7 +233,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 423}
+  m_AnchoredPosition: {x: 0, y: 504}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &112409258
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Name
+  m_text: Goodbye Neighbhour
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0988dfedd18aba046867bed38fb92a71, type: 2}
   m_sharedMaterial: {fileID: 8203420856357068428, guid: 0988dfedd18aba046867bed38fb92a71, type: 2}
@@ -319,7 +319,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -25.62455, y: 0, z: -25.624527, w: 0}
+  m_margin: {x: -25.62455, y: 0, z: -25.624527, w: -47.000126}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -518,7 +518,7 @@ RectTransform:
   m_GameObject: {fileID: 915555772}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8.914073, y: 8.914073, z: 8.914073}
+  m_LocalScale: {x: 16.490143, y: 8.914073, z: 8.914073}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 635625631}
@@ -708,7 +708,7 @@ RectTransform:
   m_GameObject: {fileID: 1204850988}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8.04803, y: 2.9004, z: 2.9004}
+  m_LocalScale: {x: 11.676082, y: 4.2079, z: 4.2079}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 407232960}
@@ -1034,7 +1034,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -361, y: 289}
+  m_AnchoredPosition: {x: -682, y: 319}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1865658047

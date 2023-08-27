@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 4778863}
   m_Layer: 0
   m_Name: Cat
-  m_TagString: Untagged
+  m_TagString: KnockDown
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -274,7 +274,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -303,6 +303,7 @@ GameObject:
   - component: {fileID: 52118603}
   - component: {fileID: 52118602}
   - component: {fileID: 52118601}
+  - component: {fileID: 52118605}
   m_Layer: 0
   m_Name: Stick Man_Hand R
   m_TagString: Player
@@ -474,6 +475,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &52118605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52118599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1119281106}
+  bloodEffect: {fileID: 1387935338}
 --- !u!1 &128223644
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,6 +501,7 @@ GameObject:
   - component: {fileID: 128223647}
   - component: {fileID: 128223646}
   - component: {fileID: 128223645}
+  - component: {fileID: 128223649}
   m_Layer: 0
   m_Name: Stick Man_Body
   m_TagString: Untagged
@@ -641,6 +657,20 @@ Transform:
   - {fileID: 1961524882}
   m_Father: {fileID: 2063061884}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &128223649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128223644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 1387935338}
 --- !u!1 &189122994
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,13 +705,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b3e808b95021f44ea4b30af0a7a7d3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 189122997}
-  hook: {fileID: 0}
-  releaseTime: 0.15
-  maxDragDist: 2
-  nextBall: {fileID: 0}
-  lineFront: {fileID: 1118372149}
-  lineBack: {fileID: 292495089}
 --- !u!231 &189122996
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -844,7 +867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 036995b0640eae24c9419094d2b3a814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bouncyInput: {fileID: 1293759520}
+  bouncyInput: {fileID: 0}
   bounciness: 0
   ballMat: {fileID: 6200000, guid: f6c448fecabb6ed4696a56533d064122, type: 2}
   rb: {fileID: 189122997}
@@ -861,6 +884,7 @@ GameObject:
   - component: {fileID: 269849056}
   - component: {fileID: 269849055}
   - component: {fileID: 269849054}
+  - component: {fileID: 269849058}
   m_Layer: 0
   m_Name: Stick Man_Hand L
   m_TagString: Player
@@ -1032,6 +1056,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &269849058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269849052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1119281106}
+  bloodEffect: {fileID: 1387935338}
 --- !u!1 &291496427
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,8 +1164,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1293759523}
-  - {fileID: 1086754293}
+  - {fileID: 1309510536}
+  - {fileID: 933875056}
   - {fileID: 1513229996}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1398,6 +1436,7 @@ GameObject:
   - component: {fileID: 429792303}
   - component: {fileID: 429792301}
   - component: {fileID: 429792302}
+  - component: {fileID: 429792306}
   m_Layer: 0
   m_Name: Stick Man_Arm R
   m_TagString: Untagged
@@ -1569,6 +1608,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 128223648}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -52.997}
+--- !u!114 &429792306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429792300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 1387935338}
 --- !u!1 &447160373
 GameObject:
   m_ObjectHideFlags: 0
@@ -1584,6 +1637,7 @@ GameObject:
   - component: {fileID: 447160378}
   - component: {fileID: 447160379}
   - component: {fileID: 447160380}
+  - component: {fileID: 447160381}
   m_Layer: 0
   m_Name: Stick Man_Body
   m_TagString: Player
@@ -1768,7 +1822,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1791,7 +1845,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 1}
+  - {x: 3, y: 3, z: 3}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -1799,21 +1853,30 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 1
+        time: 0.023517609
+        value: 0.53368187
         inSlope: 0
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.94355595
+        value: 0.16165793
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0.07161663, g: 0.5377358, b: 0, a: 1}
+      key1: {r: 0.71506655, g: 0.9811321, b: 0.3646849, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1837,11 +1900,11 @@ LineRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_ColorSpace: -1
+      m_ColorSpace: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    numCornerVertices: 0
-    numCapVertices: 0
+    numCornerVertices: 4
+    numCapVertices: 4
     alignment: 0
     textureMode: 0
     textureScale: {x: 1, y: 1}
@@ -1863,6 +1926,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620a7b1de052f19429f913ca2210182e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &447160381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447160373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1119281106}
+  bloodEffect: {fileID: 1387935338}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2114,6 +2191,7 @@ GameObject:
   - component: {fileID: 547252892}
   - component: {fileID: 547252890}
   - component: {fileID: 547252891}
+  - component: {fileID: 547252895}
   m_Layer: 0
   m_Name: Stick Man_Arm R
   m_TagString: Player
@@ -2285,6 +2363,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1119281104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &547252895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547252889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1119281106}
+  bloodEffect: {fileID: 1387935338}
 --- !u!1 &575423969
 GameObject:
   m_ObjectHideFlags: 0
@@ -2558,6 +2650,7 @@ GameObject:
   - component: {fileID: 609181232}
   - component: {fileID: 609181230}
   - component: {fileID: 609181231}
+  - component: {fileID: 609181235}
   m_Layer: 0
   m_Name: Stick Man_Leg R
   m_TagString: Untagged
@@ -2729,6 +2822,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 128223648}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &609181235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609181229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 1387935338}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2824,6 +2931,7 @@ GameObject:
   - component: {fileID: 630531144}
   - component: {fileID: 630531142}
   - component: {fileID: 630531143}
+  - component: {fileID: 630531147}
   m_Layer: 0
   m_Name: Stick Man_Arm L
   m_TagString: Player
@@ -2995,90 +3103,130 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1119281104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &676991475 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1663867811691023684, guid: 542d33d03df05404faba2faf786edea1, type: 3}
-  m_PrefabInstance: {fileID: 7062291336400316319}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &693720985
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 693720988}
-  - component: {fileID: 693720987}
-  - component: {fileID: 693720986}
-  m_Layer: 5
-  m_Name: Text (Legacy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &693720986
+--- !u!114 &630531147
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 693720985}
+  m_GameObject: {fileID: 630531141}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 0
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 
---- !u!222 &693720987
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  player: {fileID: 1119281106}
+  bloodEffect: {fileID: 1387935338}
+--- !u!1 &676991475 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1663867811691023684, guid: 542d33d03df05404faba2faf786edea1, type: 3}
+  m_PrefabInstance: {fileID: 7062291336400316319}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 693720985}
-  m_CullTransparentMesh: 1
---- !u!224 &693720988
-RectTransform:
+--- !u!1001 &866698674
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 693720985}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1293759523}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.5}
-  m_SizeDelta: {x: -20, y: -13}
-  m_Pivot: {x: 0.5, y: 0.5}
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 291496431}
+    m_Modifications:
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 21.181
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -800
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 456
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4364687632598773778, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4364687632598773778, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813119007935721539, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_Name
+      value: PlayerHealthSlider
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
 --- !u!1 &894176356
 GameObject:
   m_ObjectHideFlags: 0
@@ -3092,6 +3240,7 @@ GameObject:
   - component: {fileID: 894176360}
   - component: {fileID: 894176359}
   - component: {fileID: 894176358}
+  - component: {fileID: 894176362}
   m_Layer: 0
   m_Name: Stick Man_Foot R
   m_TagString: Player
@@ -3263,6 +3412,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &894176362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894176356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1119281106}
+  bloodEffect: {fileID: 1387935338}
+--- !u!114 &933875055 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3143942702942491372, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+  m_PrefabInstance: {fileID: 971619851}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &933875056 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+  m_PrefabInstance: {fileID: 971619851}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &942483979
 GameObject:
   m_ObjectHideFlags: 0
@@ -3294,6 +3473,111 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &971619851
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 291496431}
+    m_Modifications:
+    - target: {fileID: 314001735012186485, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314001735012186485, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5791044289852924059, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_Name
+      value: NeighHealthSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 21.181
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 810
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 456
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
 --- !u!1 &987077251
 GameObject:
   m_ObjectHideFlags: 0
@@ -3307,6 +3591,7 @@ GameObject:
   - component: {fileID: 987077255}
   - component: {fileID: 987077254}
   - component: {fileID: 987077253}
+  - component: {fileID: 987077257}
   m_Layer: 0
   m_Name: Stick Man_Hand R
   m_TagString: Untagged
@@ -3478,6 +3763,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &987077257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987077251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 1387935338}
 --- !u!1 &1004653209
 GameObject:
   m_ObjectHideFlags: 0
@@ -3491,6 +3790,7 @@ GameObject:
   - component: {fileID: 1004653212}
   - component: {fileID: 1004653210}
   - component: {fileID: 1004653211}
+  - component: {fileID: 1004653215}
   m_Layer: 0
   m_Name: Stick Man_Leg L
   m_TagString: Player
@@ -3662,6 +3962,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1119281104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1004653215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004653209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1119281106}
+  bloodEffect: {fileID: 1387935338}
 --- !u!1 &1028050233
 GameObject:
   m_ObjectHideFlags: 0
@@ -3675,6 +3989,7 @@ GameObject:
   - component: {fileID: 1028050237}
   - component: {fileID: 1028050236}
   - component: {fileID: 1028050235}
+  - component: {fileID: 1028050239}
   m_Layer: 0
   m_Name: Stick Man_Hand L
   m_TagString: Untagged
@@ -3846,6 +4161,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1028050239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028050233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 1387935338}
 --- !u!1 &1028915573
 GameObject:
   m_ObjectHideFlags: 0
@@ -3976,163 +4305,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 544115941}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1086754292
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1086754293}
-  - component: {fileID: 1086754296}
-  - component: {fileID: 1086754295}
-  - component: {fileID: 1086754294}
-  m_Layer: 5
-  m_Name: Button (Legacy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1086754293
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086754292}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1557602028}
-  m_Father: {fileID: 291496431}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 809, y: 410}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1086754294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086754292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1086754295}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Bounciness, Assembly-CSharp
-        m_MethodName: SetBounciness
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2025072057}
-        m_TargetAssemblyTypeName: Bounciness, Assembly-CSharp
-        m_MethodName: SetBounciness
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 189123001}
-        m_TargetAssemblyTypeName: Bounciness, Assembly-CSharp
-        m_MethodName: SetBounciness
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1086754295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086754292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1086754296
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086754292}
-  m_CullTransparentMesh: 1
 --- !u!1 &1109853448
 GameObject:
   m_ObjectHideFlags: 0
@@ -4438,6 +4610,7 @@ GameObject:
   - component: {fileID: 1119281102}
   - component: {fileID: 1119281101}
   - component: {fileID: 1119281105}
+  - component: {fileID: 1119281106}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4567,6 +4740,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca78a877532926c4597b1091a3321250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1119281106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119281100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0872c2cf7fc01040b9474eb4d0e470a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: 3
+  playerHealthSlider: {fileID: 1309510537}
 --- !u!1 &1124924952
 GameObject:
   m_ObjectHideFlags: 0
@@ -4580,6 +4767,7 @@ GameObject:
   - component: {fileID: 1124924956}
   - component: {fileID: 1124924955}
   - component: {fileID: 1124924954}
+  - component: {fileID: 1124924958}
   m_Layer: 0
   m_Name: Stick Man_Foot L
   m_TagString: Untagged
@@ -4751,6 +4939,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1124924958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124924952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 1387935338}
 --- !u!1 &1141401038
 GameObject:
   m_ObjectHideFlags: 0
@@ -4819,231 +5021,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1206363703
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1206363706}
-  - component: {fileID: 1206363705}
-  - component: {fileID: 1206363704}
-  m_Layer: 5
-  m_Name: Placeholder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1206363704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206363703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 2
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Enter text...
---- !u!222 &1206363705
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206363703}
-  m_CullTransparentMesh: 1
---- !u!224 &1206363706
+--- !u!224 &1309510536 stripped
 RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+  m_PrefabInstance: {fileID: 866698674}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206363703}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1293759523}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.5}
-  m_SizeDelta: {x: -20, y: -13}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1293759519
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1293759523}
-  - component: {fileID: 1293759522}
-  - component: {fileID: 1293759521}
-  - component: {fileID: 1293759520}
-  m_Layer: 5
-  m_Name: InputField (Legacy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1293759520
+--- !u!114 &1309510537 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5608916771829581703, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+  m_PrefabInstance: {fileID: 866698674}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1293759519}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d199490a83bb2b844b9695cbf13b01ef, type: 3}
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1293759521}
-  m_TextComponent: {fileID: 693720986}
-  m_Placeholder: {fileID: 1206363704}
-  m_ContentType: 0
-  m_InputType: 0
-  m_AsteriskChar: 42
-  m_KeyboardType: 0
-  m_LineType: 0
-  m_HideMobileInput: 0
-  m_CharacterValidation: 0
-  m_CharacterLimit: 0
-  m_OnSubmit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnDidEndEdit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_CustomCaretColor: 0
-  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 
-  m_CaretBlinkRate: 0.85
-  m_CaretWidth: 1
-  m_ReadOnly: 0
-  m_ShouldActivateOnSelect: 1
---- !u!114 &1293759521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1293759519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1293759522
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1293759519}
-  m_CullTransparentMesh: 1
---- !u!224 &1293759523
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1293759519}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1206363706}
-  - {fileID: 693720988}
-  m_Father: {fileID: 291496431}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 808, y: 462}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1356661737
 GameObject:
   m_ObjectHideFlags: 0
@@ -5057,6 +5050,7 @@ GameObject:
   - component: {fileID: 1356661740}
   - component: {fileID: 1356661738}
   - component: {fileID: 1356661739}
+  - component: {fileID: 1356661743}
   m_Layer: 0
   m_Name: Stick Man_Leg R
   m_TagString: Player
@@ -5228,6 +5222,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1119281104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1356661743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356661737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1119281106}
+  bloodEffect: {fileID: 1387935338}
 --- !u!1 &1378164586 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8250178090127566716, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
@@ -5264,6 +5272,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 1.5
+--- !u!1 &1387935338 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3349583326600179042, guid: 7acdcc609f5b29f41a1c788adbbc4343, type: 3}
+  m_PrefabInstance: {fileID: 974151338077049662}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1447680038
 GameObject:
   m_ObjectHideFlags: 0
@@ -5483,85 +5496,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8014674649274893062, guid: 542d33d03df05404faba2faf786edea1, type: 3}
   m_PrefabInstance: {fileID: 7062291336400316319}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1557602027
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1557602028}
-  - component: {fileID: 1557602030}
-  - component: {fileID: 1557602029}
-  m_Layer: 5
-  m_Name: Text (Legacy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1557602028
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557602027}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1086754293}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1557602029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557602027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Button
---- !u!222 &1557602030
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557602027}
-  m_CullTransparentMesh: 1
 --- !u!1 &1681202718
 GameObject:
   m_ObjectHideFlags: 0
@@ -5575,6 +5509,7 @@ GameObject:
   - component: {fileID: 1681202721}
   - component: {fileID: 1681202719}
   - component: {fileID: 1681202720}
+  - component: {fileID: 1681202724}
   m_Layer: 0
   m_Name: Stick Man_Leg L
   m_TagString: Untagged
@@ -5746,6 +5681,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 128223648}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1681202724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681202718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 1387935338}
 --- !u!1001 &1712315843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5886,6 +5835,7 @@ GameObject:
   - component: {fileID: 1742240845}
   - component: {fileID: 1742240844}
   - component: {fileID: 1742240843}
+  - component: {fileID: 1742240847}
   m_Layer: 0
   m_Name: Stick Man_Head
   m_TagString: Untagged
@@ -6047,6 +5997,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1742240847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742240841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 1387935338}
 --- !u!1 &1794741307
 GameObject:
   m_ObjectHideFlags: 0
@@ -11031,6 +10995,7 @@ GameObject:
   - component: {fileID: 1847317526}
   - component: {fileID: 1847317525}
   - component: {fileID: 1847317524}
+  - component: {fileID: 1847317528}
   m_Layer: 0
   m_Name: Stick Man_Foot L
   m_TagString: Player
@@ -11202,6 +11167,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1847317528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847317522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1119281106}
+  bloodEffect: {fileID: 1387935338}
 --- !u!1 &1901064545
 GameObject:
   m_ObjectHideFlags: 0
@@ -11215,6 +11194,7 @@ GameObject:
   - component: {fileID: 1901064548}
   - component: {fileID: 1901064546}
   - component: {fileID: 1901064547}
+  - component: {fileID: 1901064551}
   m_Layer: 0
   m_Name: Stick Man_Arm L
   m_TagString: Untagged
@@ -11386,6 +11366,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 128223648}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 55.479}
+--- !u!114 &1901064551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901064545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 1387935338}
 --- !u!1 &1961524881
 GameObject:
   m_ObjectHideFlags: 0
@@ -11399,6 +11393,7 @@ GameObject:
   - component: {fileID: 1961524885}
   - component: {fileID: 1961524884}
   - component: {fileID: 1961524883}
+  - component: {fileID: 1961524887}
   m_Layer: 0
   m_Name: Stick Man_Foot R
   m_TagString: Untagged
@@ -11570,6 +11565,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1961524887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961524881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 1387935338}
 --- !u!1 &2025072050
 GameObject:
   m_ObjectHideFlags: 0
@@ -11604,13 +11613,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b3e808b95021f44ea4b30af0a7a7d3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 2025072053}
-  hook: {fileID: 0}
-  releaseTime: 0.15
-  maxDragDist: 2
-  nextBall: {fileID: 189122994}
-  lineFront: {fileID: 1118372149}
-  lineBack: {fileID: 292495089}
 --- !u!231 &2025072052
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -11773,7 +11775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 036995b0640eae24c9419094d2b3a814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bouncyInput: {fileID: 1293759520}
+  bouncyInput: {fileID: 0}
   bounciness: 0
   ballMat: {fileID: 6200000, guid: f6c448fecabb6ed4696a56533d064122, type: 2}
   rb: {fileID: 2025072053}
@@ -11928,11 +11930,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2063061883}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d536a259e095cf84580234b636bc6073, type: 3}
+  m_Script: {fileID: 11500000, guid: c9cddb75fd9b711429fb8e02bbed1490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identifiervar: 0
-  initiatorTag: Player
+  neighborHealth: 3
+  neighborHealthSlider: {fileID: 933875055}
   delay: 2
 --- !u!1 &2088068556
 GameObject:
@@ -11947,6 +11949,7 @@ GameObject:
   - component: {fileID: 2088068560}
   - component: {fileID: 2088068559}
   - component: {fileID: 2088068558}
+  - component: {fileID: 2088068562}
   m_Layer: 0
   m_Name: Stick Man_Head
   m_TagString: Player
@@ -12108,6 +12111,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2088068562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088068556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1119281106}
+  bloodEffect: {fileID: 1387935338}
 --- !u!1001 &2139794925
 PrefabInstance:
   m_ObjectHideFlags: 0

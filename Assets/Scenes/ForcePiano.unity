@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 52118603}
   - component: {fileID: 52118602}
   - component: {fileID: 52118601}
+  - component: {fileID: 52118605}
   m_Layer: 0
   m_Name: Stick Man_Hand R
   m_TagString: Untagged
@@ -307,6 +308,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &52118605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52118599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1119281105}
+  bloodEffect: {fileID: 639339095}
 --- !u!1 &128223644
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,6 +334,7 @@ GameObject:
   - component: {fileID: 128223647}
   - component: {fileID: 128223646}
   - component: {fileID: 128223645}
+  - component: {fileID: 128223649}
   m_Layer: 0
   m_Name: Stick Man_Body
   m_TagString: Untagged
@@ -474,6 +490,20 @@ Transform:
   - {fileID: 1961524882}
   m_Father: {fileID: 2063061884}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &128223649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128223644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 639339095}
 --- !u!1 &189122994
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,6 +847,7 @@ GameObject:
   - component: {fileID: 269849056}
   - component: {fileID: 269849055}
   - component: {fileID: 269849054}
+  - component: {fileID: 269849058}
   m_Layer: 0
   m_Name: Stick Man_Hand L
   m_TagString: Untagged
@@ -988,6 +1019,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &269849058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269849052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1119281105}
+  bloodEffect: {fileID: 639339095}
 --- !u!4 &288848516 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8243273558701560848, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
@@ -1089,6 +1134,8 @@ RectTransform:
   m_Children:
   - {fileID: 1513229996}
   - {fileID: 876382298}
+  - {fileID: 1993533140}
+  - {fileID: 1774605009}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1363,6 +1410,7 @@ GameObject:
   - component: {fileID: 429792303}
   - component: {fileID: 429792301}
   - component: {fileID: 429792302}
+  - component: {fileID: 429792306}
   m_Layer: 0
   m_Name: Stick Man_Arm R
   m_TagString: Untagged
@@ -1534,6 +1582,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 128223648}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -52.997}
+--- !u!114 &429792306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429792300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 639339095}
 --- !u!1 &447160373
 GameObject:
   m_ObjectHideFlags: 0
@@ -1546,6 +1608,7 @@ GameObject:
   - component: {fileID: 447160376}
   - component: {fileID: 447160375}
   - component: {fileID: 447160374}
+  - component: {fileID: 447160378}
   m_Layer: 0
   m_Name: Stick Man_Body
   m_TagString: Untagged
@@ -1692,6 +1755,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1119281104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &447160378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447160373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1119281105}
+  bloodEffect: {fileID: 639339095}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,6 +2020,7 @@ GameObject:
   - component: {fileID: 547252892}
   - component: {fileID: 547252890}
   - component: {fileID: 547252891}
+  - component: {fileID: 547252895}
   m_Layer: 0
   m_Name: Stick Man_Arm R
   m_TagString: Untagged
@@ -2114,6 +2192,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1119281104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &547252895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547252889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1119281105}
+  bloodEffect: {fileID: 639339095}
 --- !u!1 &575423969
 GameObject:
   m_ObjectHideFlags: 0
@@ -2387,6 +2479,7 @@ GameObject:
   - component: {fileID: 609181232}
   - component: {fileID: 609181230}
   - component: {fileID: 609181231}
+  - component: {fileID: 609181235}
   m_Layer: 0
   m_Name: Stick Man_Leg R
   m_TagString: Untagged
@@ -2558,6 +2651,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 128223648}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &609181235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609181229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 639339095}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2653,6 +2760,7 @@ GameObject:
   - component: {fileID: 630531144}
   - component: {fileID: 630531142}
   - component: {fileID: 630531143}
+  - component: {fileID: 630531147}
   m_Layer: 0
   m_Name: Stick Man_Arm L
   m_TagString: Untagged
@@ -2824,11 +2932,135 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1119281104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &630531147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630531141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1119281105}
+  bloodEffect: {fileID: 639339095}
 --- !u!1 &636319063 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6818926781954567851, guid: d2df3645611dbc741b465caa68bab1d9, type: 3}
   m_PrefabInstance: {fileID: 7793017281053105453}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &639339095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3349583326600179042, guid: 7acdcc609f5b29f41a1c788adbbc4343, type: 3}
+  m_PrefabInstance: {fileID: 974151338077049662}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &780852436
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 291496431}
+    m_Modifications:
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 21.181
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -733.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 456
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4364687632598773778, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4364687632598773778, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813119007935721539, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+      propertyPath: m_Name
+      value: PlayerHealthSlider
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
 --- !u!224 &876382298 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5044650206452845552, guid: e013a531718d78649bbb893e9232b581, type: 3}
@@ -2847,6 +3079,7 @@ GameObject:
   - component: {fileID: 894176360}
   - component: {fileID: 894176359}
   - component: {fileID: 894176358}
+  - component: {fileID: 894176362}
   m_Layer: 0
   m_Name: Stick Man_Foot R
   m_TagString: Untagged
@@ -3018,6 +3251,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &894176362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894176356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1119281105}
+  bloodEffect: {fileID: 639339095}
 --- !u!1 &942483979
 GameObject:
   m_ObjectHideFlags: 0
@@ -3064,6 +3311,7 @@ GameObject:
   - component: {fileID: 987077255}
   - component: {fileID: 987077254}
   - component: {fileID: 987077253}
+  - component: {fileID: 987077257}
   m_Layer: 0
   m_Name: Stick Man_Hand R
   m_TagString: Untagged
@@ -3235,6 +3483,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &987077257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987077251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 639339095}
 --- !u!1 &1004653209
 GameObject:
   m_ObjectHideFlags: 0
@@ -3248,6 +3510,7 @@ GameObject:
   - component: {fileID: 1004653212}
   - component: {fileID: 1004653210}
   - component: {fileID: 1004653211}
+  - component: {fileID: 1004653215}
   m_Layer: 0
   m_Name: Stick Man_Leg L
   m_TagString: Untagged
@@ -3419,6 +3682,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1119281104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1004653215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004653209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1119281105}
+  bloodEffect: {fileID: 639339095}
 --- !u!1 &1028050233
 GameObject:
   m_ObjectHideFlags: 0
@@ -3432,6 +3709,7 @@ GameObject:
   - component: {fileID: 1028050237}
   - component: {fileID: 1028050236}
   - component: {fileID: 1028050235}
+  - component: {fileID: 1028050239}
   m_Layer: 0
   m_Name: Stick Man_Hand L
   m_TagString: Untagged
@@ -3603,6 +3881,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1028050239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028050233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 639339095}
 --- !u!1 &1028915573
 GameObject:
   m_ObjectHideFlags: 0
@@ -3869,13 +4161,57 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 942483980}
     m_Modifications:
+    - target: {fileID: 43726055035498965, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 473146668505754474, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329692088054983841, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403420779807631316, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1485348106098079538, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1679887397101313802, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2254856692502045194, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2407809446727952172, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
       propertyPath: audSource
       value: 
       objectReference: {fileID: 1109853449}
+    - target: {fileID: 2527975300792378708, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4677988838943032348, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
       propertyPath: m_Name
       value: BetterPianoThanTumis
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447242439021078916, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6124889811643567923, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582756215154556415, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8243273558701560848, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3917,6 +4253,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8457306335738001735, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 8469606557082106717, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
       propertyPath: options.Array.data[0]
       value: 
@@ -3925,6 +4265,10 @@ PrefabInstance:
       propertyPath: options.Array.data[1]
       value: 
       objectReference: {fileID: 339533656}
+    - target: {fileID: 8517753952210850837, guid: 58231da34c3ede343bbc3cfb3aa6004e, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4106,6 +4450,7 @@ GameObject:
   - component: {fileID: 1119281103}
   - component: {fileID: 1119281102}
   - component: {fileID: 1119281101}
+  - component: {fileID: 1119281105}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -4223,6 +4568,20 @@ Transform:
   - {fileID: 894176357}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1119281105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119281100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0872c2cf7fc01040b9474eb4d0e470a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: 3
+  playerHealthSlider: {fileID: 1774605010}
 --- !u!1 &1124924952
 GameObject:
   m_ObjectHideFlags: 0
@@ -4236,6 +4595,7 @@ GameObject:
   - component: {fileID: 1124924956}
   - component: {fileID: 1124924955}
   - component: {fileID: 1124924954}
+  - component: {fileID: 1124924958}
   m_Layer: 0
   m_Name: Stick Man_Foot L
   m_TagString: Untagged
@@ -4407,6 +4767,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1124924958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124924952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 639339095}
 --- !u!1 &1141401038
 GameObject:
   m_ObjectHideFlags: 0
@@ -4493,6 +4867,7 @@ GameObject:
   - component: {fileID: 1356661740}
   - component: {fileID: 1356661738}
   - component: {fileID: 1356661739}
+  - component: {fileID: 1356661743}
   m_Layer: 0
   m_Name: Stick Man_Leg R
   m_TagString: Untagged
@@ -4664,6 +5039,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1119281104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1356661743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356661737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1119281105}
+  bloodEffect: {fileID: 639339095}
 --- !u!1 &1378164586 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8250178090127566716, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
@@ -4700,6 +5089,111 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 2
+--- !u!1001 &1409178591
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 291496431}
+    m_Modifications:
+    - target: {fileID: 314001735012186485, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314001735012186485, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5791044289852924059, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_Name
+      value: NeighHealthSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 21.181
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 810
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 456
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
 --- !u!1001 &1442508672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5029,6 +5523,7 @@ GameObject:
   - component: {fileID: 1681202721}
   - component: {fileID: 1681202719}
   - component: {fileID: 1681202720}
+  - component: {fileID: 1681202724}
   m_Layer: 0
   m_Name: Stick Man_Leg L
   m_TagString: Untagged
@@ -5200,6 +5695,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 128223648}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1681202724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681202718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 639339095}
 --- !u!1 &1742240841
 GameObject:
   m_ObjectHideFlags: 0
@@ -5213,6 +5722,7 @@ GameObject:
   - component: {fileID: 1742240845}
   - component: {fileID: 1742240844}
   - component: {fileID: 1742240843}
+  - component: {fileID: 1742240847}
   m_Layer: 0
   m_Name: Stick Man_Head
   m_TagString: Untagged
@@ -5374,6 +5884,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1742240847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742240841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 639339095}
+--- !u!224 &1774605009 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3602491902841019615, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+  m_PrefabInstance: {fileID: 780852436}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1774605010 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5608916771829581703, guid: 4b50e65bb8da5d141bf5ad1b3c58573a, type: 3}
+  m_PrefabInstance: {fileID: 780852436}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1835752778
 GameObject:
   m_ObjectHideFlags: 0
@@ -5472,6 +6012,7 @@ GameObject:
   - component: {fileID: 1847317526}
   - component: {fileID: 1847317525}
   - component: {fileID: 1847317524}
+  - component: {fileID: 1847317528}
   m_Layer: 0
   m_Name: Stick Man_Foot L
   m_TagString: Untagged
@@ -5643,6 +6184,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1847317528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847317522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1119281105}
+  bloodEffect: {fileID: 639339095}
 --- !u!1 &1901064545
 GameObject:
   m_ObjectHideFlags: 0
@@ -5656,6 +6211,7 @@ GameObject:
   - component: {fileID: 1901064548}
   - component: {fileID: 1901064546}
   - component: {fileID: 1901064547}
+  - component: {fileID: 1901064551}
   m_Layer: 0
   m_Name: Stick Man_Arm L
   m_TagString: Untagged
@@ -5827,6 +6383,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 128223648}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 55.479}
+--- !u!114 &1901064551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901064545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 639339095}
 --- !u!1 &1961524881
 GameObject:
   m_ObjectHideFlags: 0
@@ -5840,6 +6410,7 @@ GameObject:
   - component: {fileID: 1961524885}
   - component: {fileID: 1961524884}
   - component: {fileID: 1961524883}
+  - component: {fileID: 1961524887}
   m_Layer: 0
   m_Name: Stick Man_Foot R
   m_TagString: Untagged
@@ -6011,6 +6582,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1961524887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961524881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c50e1095d1043ace082e2553c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbor: {fileID: 2063061889}
+  bloodEffect: {fileID: 639339095}
+--- !u!114 &1993533139 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3143942702942491372, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+  m_PrefabInstance: {fileID: 1409178591}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &1993533140 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8316258818831125650, guid: 94bcbb69bda561f49b14ae3636e5c65a, type: 3}
+  m_PrefabInstance: {fileID: 1409178591}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2025072050
 GameObject:
   m_ObjectHideFlags: 0
@@ -6361,11 +6962,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2063061883}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d536a259e095cf84580234b636bc6073, type: 3}
+  m_Script: {fileID: 11500000, guid: c9cddb75fd9b711429fb8e02bbed1490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identifiervar: 0
-  initiatorTag: KnockDown
+  neighborHealth: 3
+  neighborHealthSlider: {fileID: 1993533139}
   delay: 2
 --- !u!1 &2088068556
 GameObject:
@@ -6380,6 +6981,7 @@ GameObject:
   - component: {fileID: 2088068560}
   - component: {fileID: 2088068559}
   - component: {fileID: 2088068558}
+  - component: {fileID: 2088068562}
   m_Layer: 0
   m_Name: Stick Man_Head
   m_TagString: Untagged
@@ -6541,6 +7143,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2088068562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088068556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9810b492062996941a66b5c7a7109d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1119281105}
+  bloodEffect: {fileID: 639339095}
 --- !u!1001 &2139794925
 PrefabInstance:
   m_ObjectHideFlags: 0
