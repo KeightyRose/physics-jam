@@ -5,12 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 44a1b38edc8156f4aa875832d02b7b5d
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/GravityPiano.unity
     guid: b448bfa7ac584604f89f263a2b372ee0
+  - enabled: 1
+    path: Assets/Scenes/ForcePiano.unity
+    guid: 990b5c8d42176b64db181953652a10d8
   - enabled: 1
     path: Assets/Scenes/ProjLevelOne.unity
     guid: b48f46ca54b0ded49a3019845e000f5a

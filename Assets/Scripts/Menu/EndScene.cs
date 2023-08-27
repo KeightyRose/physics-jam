@@ -48,9 +48,13 @@ public class EndScene : MonoBehaviour
     public IEnumerator nextScene()
     {
         yield return new WaitForSeconds(delay);
-        if(SceneManager.GetActiveScene().buildIndex +  1 < SceneManager.sceneCount)
+        Debug.Log("Current scene : " + SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("Scene Count : " + SceneManager.sceneCountInBuildSettings);
+
+
+        if (SceneManager.GetActiveScene().buildIndex +  1 < SceneManager.sceneCountInBuildSettings)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
         }
         else
         {
