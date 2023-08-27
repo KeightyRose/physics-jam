@@ -18,7 +18,11 @@ public class AddForce : AbstractButton
         direction.z = 0;
         Debug.Log("FORCE TO ADD:" + direction);
         a_Rb.AddForce(-1*direction * addForce,ForceMode2D.Impulse);
-        a_Rb.gravityScale= 1;
+        if (!a_Object.TryGetComponent<CustomGrav>(out CustomGrav cg))
+        {
+            a_Rb.gravityScale = 1;
+        }
+        
     }
 
 }

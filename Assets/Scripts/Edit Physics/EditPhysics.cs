@@ -133,5 +133,7 @@ public class EditPhysics : MonoBehaviour
             options[i].transform.position = Input.mousePosition + pos;
 
         }
+
+
     }
 }
