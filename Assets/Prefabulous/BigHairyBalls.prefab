@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8542103294974167410}
   - component: {fileID: 3993449304244658773}
   - component: {fileID: 8291199620506834070}
+  - component: {fileID: 7345178999625767757}
   m_Layer: 0
   m_Name: BigHairyBalls
   m_TagString: Ball
@@ -159,5 +160,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b932f9ef3635e144ad2e31faf0f001f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7345178999625767757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417537828571412336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2de4bb15dbb13a479ff45ff170bdf90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

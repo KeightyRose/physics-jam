@@ -6,13 +6,14 @@ using UnityEngine.SceneManagement;
 public class MenuScr : MonoBehaviour
 {
     private SceneManager _sceneManager;
-    // Start is called before the first frame update
+
+    public GameObject creditsPanel;
+
     void Start()
     {
-        
+        creditsPanel.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -25,5 +26,15 @@ public class MenuScr : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void Credits()
+    {
+        creditsPanel.SetActive(true);
+    }
+
+    public void Back()
+    {
+        creditsPanel.SetActive(false);
     }
 }
