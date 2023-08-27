@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 public abstract class AbstractButton : MonoBehaviour
 {
@@ -47,6 +48,12 @@ public abstract class AbstractButton : MonoBehaviour
                 }
             }
         }
+        Vector3 posChecker =  Camera.main.ScreenToViewportPoint(transform.position);
+        if (posChecker.x > 1 || posChecker.y > 1 || posChecker.x < 0 || posChecker.y < 0)
+        {
+            transform.position = Vector3.Lerp(transform.position, new Vector3(0.5f, 0.5f, 0), Time.deltaTime * 2);
+        }
+
     }
     private void Close()
     {

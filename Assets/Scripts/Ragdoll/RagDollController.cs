@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class RagDollController : MonoBehaviour
 {
-    private BoxCollider2D mainCollider;
+    private Collider2D mainCollider;
     private Collider2D[] ragDollColliders;
     private Rigidbody2D[] ragDollRigidBodies;
 
@@ -15,26 +15,28 @@ public class RagDollController : MonoBehaviour
     void Start()
     {
         GetRagDoll();
-        mainCollider = GetComponent<BoxCollider2D>();
+        mainCollider = GetComponent<Collider2D>();
         RagDollModeOff();
-
-        particles = particleEffect.GetComponent<ParticleSystem>();
+        if(particleEffect!= null)
+        {
+            particles = particleEffect.GetComponent<ParticleSystem>();
+        }
+       
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "KnockDown")
         {
             RagDollModeOn();
-
-            GameObject temp = Instantiate(particleEffect, collision.contacts[0].point, Quaternion.identity);
-            particles = temp.GetComponent<ParticleSystem>();
-            particles.Play();
+            if (particleEffect != null)
+            {
+                GameObject temp = Instantiate(particleEffect, collision.contacts[0].point, Quaternion.identity);
+                particles = temp.GetComponent<ParticleSystem>();
+                particles.Play();
+            }
+           
         }
     }
 
