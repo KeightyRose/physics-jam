@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerChildren : MonoBehaviour
 {
-    // Static not dynamic 
     public Player player;
 
     void Start()
@@ -22,7 +21,7 @@ public class PlayerChildren : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
-            //player.health -= 1;
+            player.playerHealth -= 1;
         }
     }
 }
