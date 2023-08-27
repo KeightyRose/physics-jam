@@ -6451,7 +6451,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1537808904414405058, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
       propertyPath: m_text
-      value: Go schrodingers cat, tear them apart !
+      value: Go Schrodingers Cat, tear them apart !
       objectReference: {fileID: 0}
     - target: {fileID: 1537808904414405058, guid: aa103db43afe1a44bbfb1b37bd1a94f2, type: 3}
       propertyPath: m_fontSize
