@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class PlayerChildren : MonoBehaviour
+public class NeighborChildren : MonoBehaviour
 {
-    public Player player;
+    public Neighbor neighbor;
 
     [SerializeField] private GameObject bloodEffect;
     private ParticleSystem _bloodParticles;
@@ -17,12 +18,13 @@ public class PlayerChildren : MonoBehaviour
         _particlePrefab.SetActive(false);
     }
 
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
-            player.playerHealth -= 1;
-            player.playerHealthSlider.value = player.playerHealth;
+            neighbor.neighborHealth -= 1;
+            neighbor.neighborHealthSlider.value = neighbor.neighborHealth;
             _particlePrefab.transform.position = this.gameObject.transform.position;
             _particlePrefab.SetActive(true);
         }

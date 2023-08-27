@@ -15,7 +15,7 @@ public class GravitySlider : MonoBehaviour
         gravitySlider.minValue = -1.5f;
         gravitySlider.maxValue = 1.5f;
 
-        gravitySlider.value = .5f;
+        gravitySlider.value = -1f;
     }
 
 

@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
+
+
     void Start()
     {
         Invoke("DestroyThis", 12f);
     }
 
-    void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if(collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Neighbor"))
+        {
+
+            GameObject.Destroy(gameObject);
+        }
     }
 
     private void DestroyThis()
