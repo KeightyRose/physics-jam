@@ -5,6 +5,7 @@ using UnityEngine;
 public class EditGravity : AbstractButton
 {
     private CustomGrav gravScript;
+    private bool ragDoll = false;
     public override void editPhysics()
     {
         base.editPhysics();

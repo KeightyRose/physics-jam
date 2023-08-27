@@ -19,7 +19,6 @@ public abstract class AbstractButton : MonoBehaviour
     }
     public void SetObject(GameObject obj)
     {
-        Debug.Log("CALLED THIS");
         a_Object = obj;
         a_Rb= obj.GetComponent<Rigidbody2D>();
         a_EditPhysics= obj.GetComponent<EditPhysics>();
@@ -56,7 +55,6 @@ public abstract class AbstractButton : MonoBehaviour
     public virtual void editPhysics()
     {
         activeButton = true;
-        Debug.Log("MY POS2 is " + a_Object.transform.position);
     }
     public virtual void updatePhysics() 
     {

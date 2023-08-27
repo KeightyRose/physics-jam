@@ -5,6 +5,7 @@ using UnityEngine;
 public class AddForce : AbstractButton
 {
     // Start is called before the first frame update
+    [SerializeField] private float addForce = 1;
     public override void editPhysics()
     {
         base.editPhysics();
@@ -16,7 +17,8 @@ public class AddForce : AbstractButton
         Vector3 direction = a_Object.transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         direction.z = 0;
         Debug.Log("FORCE TO ADD:" + direction);
-        a_Rb.AddForce(-1*direction,ForceMode2D.Impulse);
+        a_Rb.AddForce(-1*direction * addForce,ForceMode2D.Impulse);
         a_Rb.gravityScale= 1;
     }
+
 }
