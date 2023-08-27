@@ -1,18 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float playerHealth = 3;
+
+    public Slider playerHealthSlider;
+
     void Start()
     {
-        
+        playerHealthSlider.minValue = 0;
+        playerHealthSlider.maxValue = 3;
+        playerHealthSlider.value = 3;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        
+        if(playerHealth <= 0)
+        {
+            Debug.Log("game over");
+        }
     }
 }
